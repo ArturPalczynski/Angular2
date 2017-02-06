@@ -18,8 +18,8 @@ export class AppComponent {
     constructor(){
 
         this.students = [
-            new Student('Artur', 'Pałczyński'), 
-            new Student('Załoga', 'Gee')
+            new Student('XXXXX', 'YYYYYY'), 
+            new Student('ZZZZZ', 'GGGGGG')
         ]
 
 
