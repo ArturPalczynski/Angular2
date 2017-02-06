@@ -1,0 +1,17 @@
+<table class = "table table-hover">
+
+    <thead>
+            <tr>
+                <td>First Name</td>
+                <td>Last Name</td>
+            </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "#s of students" (click) = "onSelect(s)">
+                <td>{{s.firstName}}</td>
+                <td>{{s.lastName}}</td>
+        </tr>
+
+    </tbody>
+
+</table>
