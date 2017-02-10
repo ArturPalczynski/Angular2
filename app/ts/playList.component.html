@@ -15,3 +15,13 @@
     </tbody>
 
 </table>
+<div class="col-xs-3">
+    <input class="form-control" #wartosc>
+</div>
+
+<button type="button" class="btn btn-success btn-xs" (click) = "addToList(wartosc.value); showMessage(wartosc.value)">Dodaj</button>
+<br>
+<br>
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="#w of list">{{w}}</li>
+</ul>

@@ -12,8 +12,22 @@ import {Student} from './app.model.student';
 
 export class PlayListComponent {
 
+    message : String;
+    list : Array<String> = ['ala', 'ma', 'kota'];
+
     onSelect(s:Student){
         console.log(s.firstName);
+
+    }
+
+    showMessage(message : String){
+
+        console.log(message);
+
+    }
+    addToList(item:String){
+
+        this.list.push(item);
 
     }
 
