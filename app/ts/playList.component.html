@@ -1,4 +1,13 @@
-<div class="container-fluid" style="padding-top: 100px; color:darkcyan">
+<link rel="stylesheet" type="text/css" href="app.styles.css">
+
+<div class="navbar navbar-inverse navbar-fixed-left" style="width: 170px;position: fixed;height: 100%;padding-top: 70px; padding-left: 0px">
+  <a class="navbar-brand" href="#">Brand</a>
+  
+</div>
+
+
+
+<div class="container-fluid" style="padding-top: 100px;color:darkcyan; padding-left:200px; ">
     <table class = "table table-hover">
         <thead>
             <tr>
@@ -15,17 +24,17 @@
     </table>
 </div>
 
+<h2>Wszystkie dni są Twoje chociaż masz je tylko raz.</h2>
 
 
 
-<div class="col-xs-3">
+<div class="col-xs-3" style="padding-left: 215px">
     <input class="form-control" #wartosc>
 </div>
 
-<button type="button" class="btn btn-success btn-ms" (click) = "addToList(wartosc.value); showMessage(wartosc.value)">Dodaj</button>
-<br>
-<br>
-<ul class="list-group">
+<button type="button" class="btn btn-success btn-ms"  (click) = "addToList(wartosc.value); showMessage(wartosc.value)">Dodaj</button>
+
+<ul class="list-group" style="padding-left: 200px">
     <div class="col-xs-6">
         <li class="list-group-item" *ngFor="#w of list">{{w}}</li>
     </div>
