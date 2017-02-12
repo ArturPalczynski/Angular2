@@ -1,27 +1,33 @@
-<table class = "table table-hover">
-
-    <thead>
+<div class="container-fluid" style="padding-top: 100px; color:darkcyan">
+    <table class = "table table-hover">
+        <thead>
             <tr>
-                <td>First Name</td>
-                <td>Last Name</td>
+                <td class="span2">First Name</td>
+                <td class="span5"> Last Name</td>
             </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor = "#s of students" (click) = "onSelect(s)">
-                <td>{{s.firstName}}</td>
-                <td>{{s.lastName}}</td>
-        </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "#s of students" (click) = "onSelect(s)">
+                    <td>{{s.firstName}}</td>
+                    <td>{{s.lastName}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
-    </tbody>
 
-</table>
+
+
 <div class="col-xs-3">
     <input class="form-control" #wartosc>
 </div>
 
-<button type="button" class="btn btn-success btn-xs" (click) = "addToList(wartosc.value); showMessage(wartosc.value)">Dodaj</button>
+<button type="button" class="btn btn-success btn-ms" (click) = "addToList(wartosc.value); showMessage(wartosc.value)">Dodaj</button>
 <br>
 <br>
 <ul class="list-group">
-    <li class="list-group-item" *ngFor="#w of list">{{w}}</li>
+    <div class="col-xs-6">
+        <li class="list-group-item" *ngFor="#w of list">{{w}}</li>
+    </div>
+    
 </ul>

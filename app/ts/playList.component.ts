@@ -14,15 +14,21 @@ export class PlayListComponent {
 
     message : String;
     list : Array<String> = ['ala', 'ma', 'kota'];
+    student1: Student;
+
+  
 
     onSelect(s:Student){
         console.log(s.firstName);
+        
 
     }
 
     showMessage(message : String){
 
         console.log(message);
+        
+        
 
     }
     addToList(item:String){
