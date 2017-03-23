@@ -1,5 +1,4 @@
 import {Component} from 'angular2/core';
-import {Config} from './app.config';
 import {Student} from './app.model.student';
 
 

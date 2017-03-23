@@ -1,0 +1,26 @@
+body
+{
+    padding-top: 80px;
+}
+#orderNumberInput{
+    padding-left: 0px;
+    background-color: lightblue;
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    padding-top: 60px;
+    
+}
+#orderNumberInputLabel{
+    font-size: 120%;
+}
+#theMainInputforOrderNumber{
+
+    background-color: lightsalmon;      
+
+}
+#dupa{
+    width: 400px;
+    height: 300px;
+    background-color: lightgoldenrodyellow;
+}
